@@ -27,9 +27,41 @@ __Procedure__:
 5) (Optional) Add noise
 6) Coherent demodulation (multiply by synchronized carrier)
 7) Low-pass filter to recover message
+ __Program__:
+```import numpy as np
+import matplotlib.pyplot as plt
+Ac = 2
+fc = 7000
+Am = 5
+fm = 700
+fs = 70000
+t = np.arange(0, 2/fm, 1/fs)
+Wm = 2 * np.pi * fm
+Wc = 2 * np.pi * fc
+Em = Am * np.sin(Wm * t)
+Ec = Ac * np.sin(Wc * t)
+Edsbsc = ((Am / 2) * np.cos((Wc - Wm) * t)) - ((Am / 2) * np.cos((Wc + Wm) * t))
+plt.figure(figsize=(10, 6))
+plt.subplot(3, 1, 1)
+plt.plot(t, Em)
+plt.grid()
+plt.subplot(3, 1, 2)
+plt.plot(t, Ec)
+
+plt.grid()
+plt.subplot(3, 1, 3)
+plt.plot(t, Edsbsc)
+plt.grid()
+plt.tight_layout()
+plt.show()
+```
 
    __Tabulation__:
+   <img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/0d3f3488-3af2-47e4-bdd6-b66549c90df3" />
+
 
    __Output__:
+   <img width="987" height="587" alt="image" src="https://github.com/user-attachments/assets/721fe21e-c1a3-43bd-b338-fcd38cb00585" />
+
 
    __Result__:
