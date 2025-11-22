@@ -55,7 +55,7 @@ plt.grid()
 plt.tight_layout()
 plt.show()
 ```
- __Tabulation__:
+### Tabulation:
    <img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/0d3f3488-3af2-47e4-bdd6-b66549c90df3" />
 
 
