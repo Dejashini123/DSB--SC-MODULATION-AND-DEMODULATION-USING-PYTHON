@@ -55,13 +55,12 @@ plt.grid()
 plt.tight_layout()
 plt.show()
 ```
-
-   __Tabulation__:
+ __Tabulation__:
    <img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/0d3f3488-3af2-47e4-bdd6-b66549c90df3" />
 
 
-   __Output__:
+ __Output__:
    <img width="987" height="587" alt="image" src="https://github.com/user-attachments/assets/721fe21e-c1a3-43bd-b338-fcd38cb00585" />
 
 
-   __Result__:
+ __Result__:
