@@ -64,3 +64,4 @@ plt.show()
 
 
  __Result__:
+![WhatsApp Image 2025-11-27 at 10 05 22 PM](https://github.com/user-attachments/assets/844faf5f-9f4e-47fa-9bfa-539ecdd08c8b)
